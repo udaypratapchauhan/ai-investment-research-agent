@@ -196,7 +196,7 @@ The following diagram shows the end-to-end data flow:
 ### Step 1 — Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-investment-agent.git
+git clone https://github.com/udaypratapchauhan/ai-investment-research-agent.git
 cd ai-investment-agent
 ```
 
@@ -225,7 +225,7 @@ Open `.env` and add your Gemini API key:
 
 ```env
 PORT=3001
-GEMINI_API_KEY=your_actual_gemini_api_key_here
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 ### Step 5 — Run the Backend
@@ -428,9 +428,9 @@ npm run build
 
 Set the `VITE_API_URL` environment variable in Vercel's project settings if using a custom backend domain.
 
-### Backend — Render / Railway
+### Backend — Render
 
-The Express backend can be deployed to [Render](https://render.com) or [Railway](https://railway.app):
+The Express backend can be deployed to [Render](https://render.com):
 
 1. Push the `/backend` folder to a GitHub repository
 2. Connect the repo to Render / Railway
@@ -466,14 +466,9 @@ Building this project provided hands-on experience with:
 ## Author
 
 **Your Name**
-- 🐙 GitHub: [@your-username](https://github.com/your-username)
-- 💼 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- 🐙 GitHub: https://github.com/udaypratapchauhan
+- 💼 LinkedIn: https://www.linkedin.com/in/udaypratapchauhan001/
 
----
-
-## License
-
-MIT — free to use, modify, and distribute.
 
 ---
 
