@@ -16,19 +16,19 @@
 
 | | URL |
 |---|---|
-| **Frontend** | `<Frontend URL>` |
-| **Backend API** | `<Backend URL>` |
-| **GitHub Repository** | `<Repository URL>` |
+| **Frontend** | https://ai-investment-research-agent-fawn.vercel.app |
+| **Backend API** | https://ai-investment-research-agent-8uoa.onrender.com |
+| **GitHub Repository** | https://github.com/udaypratapchauhan/ai-investment-research-agent |
 
 ---
 
-## Overview
+## 📖 Overview
 
 The application accepts a company name, constructs a research prompt using **LangChain's PromptTemplate**, sends it to **Google Gemini 2.5 Flash**, and parses the response into a structured JSON report rendered as a professional dark-themed UI with Framer Motion animations.
 
 ---
 
-## Features
+## ✨ Features
 
 | | Feature |
 |---|---|
@@ -43,7 +43,7 @@ The application accepts a company name, constructs a research prompt using **Lan
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -53,23 +53,20 @@ The application accepts a company name, constructs a research prompt using **Lan
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Home Page
-<!-- Add screenshot here -->
+![Home Page](./screenshots/Screenshot%202026-07-07%20003140.png)
 
 ### AI Analysis Result
-<!-- Add screenshot here -->
+![AI Analysis Result](./screenshots/Screenshot%202026-07-07%20003151.png)
 
 ### Investment Recommendation
-<!-- Add screenshot here -->
-
-### Mobile View (Optional)
-<!-- Add screenshot here -->
+![Investment Recommendation](./screenshots/Screenshot%202026-07-07%20003200.png)
 
 ---
 
-## Architecture
+## 🏗️ Architecture
 
 ```
 User → React Frontend (Axios POST /api/analyze)
@@ -82,7 +79,7 @@ User → React Frontend (Axios POST /api/analyze)
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 ai-investment-agent/
@@ -112,73 +109,40 @@ ai-investment-agent/
 
 ---
 
-## Installation
+## 🚀 Installation
 
 **Prerequisites:** Node.js v18+, a free [Google Gemini API key](https://aistudio.google.com/app/apikey)
 
 ```bash
-<<<<<<< HEAD
+# 1. Clone the repository
 git clone https://github.com/udaypratapchauhan/ai-investment-research-agent.git
-=======
-# 1. Clone
-git clone https://github.com/your-username/ai-investment-agent.git
->>>>>>> 60384d2 (Update README)
-cd ai-investment-agent
 
-# 2. Install backend
+cd ai-investment-research-agent
+
+# 2. Install backend dependencies
 cd backend && npm install
 
-# 3. Install frontend
+# 3. Install frontend dependencies
 cd ../frontend && npm install
 
-# 4. Configure environment
+# 4. Configure environment variables
 cd ../backend
 cp .env.example .env
 # Open .env and paste your Gemini API key
 
-# 5. Run backend (Terminal 1)
+# 5. Run the backend (Terminal 1)
 npm run dev        # → http://localhost:3001
 
-# 6. Run frontend (Terminal 2)
+# 6. Run the frontend (Terminal 2)
 cd ../frontend
 npm run dev        # → http://localhost:5173
 ```
 
-<<<<<<< HEAD
-Open `.env` and add your Gemini API key:
-
-```env
-PORT=3001
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
-```
-
-### Step 5 — Run the Backend
-
-```bash
-# Inside /backend
-npm run dev
-```
-
-Server starts at **http://localhost:3001**
-
-### Step 6 — Run the Frontend
-
-Open a new terminal:
-
-```bash
-# Inside /frontend
-npm run dev
-```
-
-App opens at **http://localhost:5173**
-
-=======
->>>>>>> 60384d2 (Update README)
 ---
 
-## Environment Variables
+## 🔑 Environment Variables
 
-Create `backend/.env` using the template below:
+Create `backend/.env` using the provided template:
 
 ```env
 PORT=3001
@@ -189,7 +153,7 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 
 ---
 
-## API Endpoint
+## 📡 API Endpoint
 
 ### `POST /api/analyze`
 
@@ -223,43 +187,31 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 
 ---
 
-## Deployment
+## ☁️ Deployment
 
 ### Frontend → [Vercel](https://vercel.com)
+
 ```bash
 cd frontend && npm run build
-# Deploy /dist to Vercel
-```
-Set `VITE_API_URL=https://your-backend-domain/api` in Vercel environment settings.
-
-<<<<<<< HEAD
-Set the `VITE_API_URL` environment variable in Vercel's project settings if using a custom backend domain.
-
-### Backend — Render
-
-The Express backend can be deployed to [Render](https://render.com):
-
-1. Push the `/backend` folder to a GitHub repository
-2. Connect the repo to Render / Railway
-3. Set the following environment variables in the platform dashboard:
-
-```
-PORT=3001
-GEMINI_API_KEY=your_production_api_key
+# Deploy the /dist folder to Vercel
 ```
 
-> **Note:** Update the CORS origin in `server.js` to match your production frontend URL before deploying.
-=======
-### Backend → [Render](https://render.com) / [Railway](https://railway.app)
-1. Push `/backend` to GitHub
-2. Connect repo on Render / Railway
-3. Add environment variables: `PORT` and `GEMINI_API_KEY`
-4. Update CORS origin in `server.js` to match your frontend URL
->>>>>>> 60384d2 (Update README)
+Set `VITE_API_URL=https://ai-investment-research-agent-8uoa.onrender.com/api` in Vercel's project environment settings.
+
+### Backend → [Render](https://render.com) 
+
+1. Push the `/backend` folder to your GitHub repository
+2. Connect the repo on Render 
+3. Add the following environment variables in the platform dashboard:
+   ```
+   PORT=3001
+   GEMINI_API_KEY=your_production_api_key
+   ```
+4. Update the CORS origin in `server.js` to match your production frontend URL
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 | Improvement | Detail |
 |---|---|
@@ -272,12 +224,11 @@ GEMINI_API_KEY=your_production_api_key
 
 ---
 
-## Author
+## 👤 Author
 
-**Your Name**
-- 🐙 GitHub: https://github.com/udaypratapchauhan
-- 💼 LinkedIn: https://www.linkedin.com/in/udaypratapchauhan001/
-
+**Uday Pratap Chauhan**
+- 🐙 GitHub: [github.com/udaypratapchauhan](https://github.com/udaypratapchauhan)
+- 💼 LinkedIn: [linkedin.com/in/udaypratapchauhan001](https://www.linkedin.com/in/udaypratapchauhan001/)
 
 ---
 
